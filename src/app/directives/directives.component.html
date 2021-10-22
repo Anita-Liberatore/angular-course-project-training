@@ -1,0 +1,17 @@
+<button (click)="flag = !flag">Click me - directives example</button>
+<h1 *ngIf="flag">ng if example</h1>
+<!--good practise-->
+
+<li [hidden]="!flag" *ngFor="let user of users">
+
+    {{user}}
+</li>
+<!-- bad practise because hidden set a css propery to dom, so it's display none but in the dom is always present--->
+
+<!--good practise-->
+<div *ngFor="let user of users">
+    <li *ngIf="flag">
+
+        {{user}}
+    </li>
+</div>
