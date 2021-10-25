@@ -1,0 +1,7 @@
+<!--in this example I use component html in brackets <img [src]="url">-->
+
+<div>
+    <button [disabled]="image" (click)="load()">load</button>
+    <button [disabled]="!image" (click)="unload()">unload</button>
+</div>
+<img *ngIf="image" [src]="image">

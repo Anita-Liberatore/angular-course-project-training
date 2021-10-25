@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { NativeEventsComponent } from './native-events/native-events.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { PropertyBracketsComponent } from './property-brackets/property-brackets.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InterpolationComponent,
     NativeEventsComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    PropertyBracketsComponent
   ],
   imports: [
     BrowserModule,
