@@ -8,6 +8,7 @@ import { NativeEventsComponent } from './native-events/native-events.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PropertyBracketsComponent } from './property-brackets/property-brackets.component';
 import { ComponentComponent } from './component/component.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ComponentComponent } from './component/component.component';
     NativeEventsComponent,
     DirectivesComponent,
     PropertyBracketsComponent,
-    ComponentComponent
+    ComponentComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
