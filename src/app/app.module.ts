@@ -9,6 +9,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { PropertyBracketsComponent } from './property-brackets/property-brackets.component';
 import { ComponentComponent } from './component/component.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { CustomTypesComponent } from './custom-types/custom-types.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PipesComponent } from './pipes/pipes.component';
     DirectivesComponent,
     PropertyBracketsComponent,
     ComponentComponent,
-    PipesComponent
+    PipesComponent,
+    CustomTypesComponent
   ],
   imports: [
     BrowserModule,
