@@ -7,6 +7,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { NativeEventsComponent } from './native-events/native-events.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PropertyBracketsComponent } from './property-brackets/property-brackets.component';
+import { ComponentComponent } from './component/component.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PropertyBracketsComponent } from './property-brackets/property-brackets
     InterpolationComponent,
     NativeEventsComponent,
     DirectivesComponent,
-    PropertyBracketsComponent
+    PropertyBracketsComponent,
+    ComponentComponent
   ],
   imports: [
     BrowserModule,
