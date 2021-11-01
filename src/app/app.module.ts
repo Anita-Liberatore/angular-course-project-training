@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { CustomTypesComponent } from './custom-types/custom-types.component';
 import { ServiceIntroductionComponent } from './service-introduction/service-introduction.component';
 import { Utility } from './service-introduction/utility';
+import { HttpClientExampleComponent } from './http-client-example/http-client-example.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +25,13 @@ import { Utility } from './service-introduction/utility';
     ComponentComponent,
     PipesComponent,
     CustomTypesComponent,
-    ServiceIntroductionComponent
+    ServiceIntroductionComponent,
+    HttpClientExampleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [Utility],
   bootstrap: [AppComponent]
