@@ -10,6 +10,8 @@ import { PropertyBracketsComponent } from './property-brackets/property-brackets
 import { ComponentComponent } from './component/component.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { CustomTypesComponent } from './custom-types/custom-types.component';
+import { ServiceIntroductionComponent } from './service-introduction/service-introduction.component';
+import { Utility } from './service-introduction/utility';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,14 @@ import { CustomTypesComponent } from './custom-types/custom-types.component';
     PropertyBracketsComponent,
     ComponentComponent,
     PipesComponent,
-    CustomTypesComponent
+    CustomTypesComponent,
+    ServiceIntroductionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [Utility],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
