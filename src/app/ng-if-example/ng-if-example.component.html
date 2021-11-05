@@ -1,0 +1,7 @@
+<!--<div *ngIf="!users">LOADING</div>
+<div *ngIf="users">{{users | json}}</div> -->
+
+<div *ngIf="!users; else success">LOADING</div>
+<ng-template #success>{{users | json}}</ng-template>
+
+<!--#success -> template refence variable-->
