@@ -1,3 +1,23 @@
-<div *ngFor="let user of users">
+<!--<div *ngFor="let user of users">
     {{user.name}}
+  </div>
+
+  <hr>
+
+  <div *ngFor="let user of users; let i = index;">
+    {{i + 1}}. {{user.name}}
+  </div>
+
+  <hr>
+
+  <div *ngFor="let user of users; let i = index; let odd = odd; let last = last">
+    {{i + 1}}. {{user.name}}
+    <hr *ngIf="odd">
+
+    <div *ngIf="last">END OF LIST</div>
+  </div> -->
+
+  <div *ngFor="let user of users">
+    {{user.name}}
+    <button (click)="delete(user)">Delete</button>
   </div>

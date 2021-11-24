@@ -1,0 +1,26 @@
+<!--<li [class.male]="user.gender === 'M'" [class.female]="user.gender === 'F'" *ngFor="let user of users">{{user.name}}
+</li> -->
+
+<li *ngFor="let user of users" [ngClass]="{
+  'male': user.gender === 'M',
+  'female': user.gender === 'F'
+}">{{user.name}}</li>
+
+<!--another method-->
+<br>
+
+<li *ngFor="let user of users" [ngClass]="getClassCss(user)">{{user.name}}</li>
+
+<!--inline css-->
+<br>
+<li *ngFor="let user of users" [style.color]="user.gender === 'M' ? 'white' : null"
+    [style.backgroundColor]="user.gender === 'M' ? 'blue' : 'pink'" [style.fontSize.px]="user.px">{{user.name}}</li>
+
+<!--ngStyle-->
+<br>
+<li *ngFor="let user of users"
+    [ngStyle]="{ fontSize: '40', backgroundColor: user.gender === 'M' ? 'blue' : 'pink', color: user.gender === 'M' ? 'white' : null }">
+    {{user.name}}</li>
+
+<!--another method-->
+<li *ngFor="let user of users" [ngStyle]="getStyle(user)">{{user.name}}</li>

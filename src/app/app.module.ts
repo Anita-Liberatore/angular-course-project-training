@@ -16,6 +16,7 @@ import { Utility } from './service-introduction/utility';
 import { HttpClientExampleComponent } from './http-client-example/http-client-example.component';
 import { NgIfExampleComponent } from './ng-if-example/ng-if-example.component';
 import { NgForTypeObjectComponent } from './ng-for-type-object/ng-for-type-object.component';
+import { StylesComponentsComponent } from './styles-components/styles-components.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { NgForTypeObjectComponent } from './ng-for-type-object/ng-for-type-objec
     ServiceIntroductionComponent,
     HttpClientExampleComponent,
     NgIfExampleComponent,
-    NgForTypeObjectComponent
+    NgForTypeObjectComponent,
+    StylesComponentsComponent
   ],
   imports: [
     BrowserModule,
