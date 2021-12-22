@@ -18,6 +18,7 @@ import { NgIfExampleComponent } from './ng-if-example/ng-if-example.component';
 import { NgForTypeObjectComponent } from './ng-for-type-object/ng-for-type-object.component';
 import { StylesComponentsComponent } from './styles-components/styles-components.component';
 import { CssLibraryComponent } from './css-library/css-library.component';
+import { InputKeywordEventComponent } from './input-keyword-event/input-keyword-event.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CssLibraryComponent } from './css-library/css-library.component';
     NgIfExampleComponent,
     NgForTypeObjectComponent,
     StylesComponentsComponent,
-    CssLibraryComponent
+    CssLibraryComponent,
+    InputKeywordEventComponent
   ],
   imports: [
     BrowserModule,

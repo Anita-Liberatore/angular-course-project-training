@@ -1,0 +1,54 @@
+<!--EXAMPLE 1 -->
+<!--<input
+type="text"
+placeholder="Add user name"
+(keydown)="add()">
+
+
+<li *ngFor="let user of users">{{user}}</li>
+
+<br>
+
+EXAMPLE 2 
+<input
+type="text"
+placeholder="Add user name"
+(keydown)="addValue($event)">
+
+
+<li *ngFor="let user of users">{{user}}</li>
+
+<br>
+EXAMPLE 3
+<input
+type="text"
+placeholder="Add user name"
+(keydown.enter)="addValueTwo($event)">
+
+
+<li *ngFor="let user of users">{{user}}</li>
+
+<br>
+EXAMPLE 4
+<input
+type="text"
+placeholder="Add user name"
+#inputRef  
+(keydown.enter)="addValueThree(inputRef)">
+
+
+<li *ngFor="let user of users">{{user}}</li>
+inputRef is template reference variables, is like doing getElementById
+
+<br>
+EXAMPLE 5 -->
+<input
+type="text"
+#inputRef
+placeholder="Add user name"
+(keyup.enter)="addUser(inputRef)">
+
+
+<li *ngFor="let user of users">{{user}}</li>
+<!--inputRef is template reference variables, is like doing getElementById-->
+<button (click)="addUser(inputRef)">Save</button>
