@@ -19,6 +19,8 @@ import { NgForTypeObjectComponent } from './ng-for-type-object/ng-for-type-objec
 import { StylesComponentsComponent } from './styles-components/styles-components.component';
 import { CssLibraryComponent } from './css-library/css-library.component';
 import { InputKeywordEventComponent } from './input-keyword-event/input-keyword-event.component';
+import { NgModelComponent } from './ng-model/ng-model.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,12 +38,14 @@ import { InputKeywordEventComponent } from './input-keyword-event/input-keyword-
     NgForTypeObjectComponent,
     StylesComponentsComponent,
     CssLibraryComponent,
-    InputKeywordEventComponent
+    InputKeywordEventComponent,
+    NgModelComponent    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [Utility],
   bootstrap: [AppComponent]
