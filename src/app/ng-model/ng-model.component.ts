@@ -7,21 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ng-model.component.scss']
 })
 export class NgModelComponent implements OnInit {
+  users: string[] = [];
 
-  oneWayBinding = 'guest'
-  twoWayBinding = 'Mario'
+  oneWayBinding: string | undefined;
+
   constructor() { 
-        setTimeout(() => {
-            this.oneWayBinding = 'Mario'
-        }, 2000);
+    console.log("ok - constructor")
+
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void {    console.log("ok - ng on init")
+
   }
 
 
-  add() {
-    console.log(this.twoWayBinding);
+  add(form: any) {
+    console.log(form.value);
+    this.users.push(form.value.oneWayBinding)
   }
 
 }

@@ -1,15 +1,23 @@
-<input
+<!--<input
     type="text"
     placeholder="Add User name"
     [ngModel]="oneWayBinding">
-{{oneWayBinding}}
+{{oneWayBinding}} -->
 <!--se rimane con solo ng model -> il binding è solo unidirezionale se cambio in input non cambia nel label, occorre mettere [(ngModel)]-->
-<input
-    type="text"
-    placeholder="Add User name"
-    [(ngModel)]="twoWayBinding">
-{{twoWayBinding}}
 
-<small *ngIf="twoWayBinding.length <3">Too short</small>
+<form #f="ngForm" (submit)="add(f)">
+    <input
+        type="text"
+        placeholder="Add User name"
+        [ngModel]="oneWayBinding"
+        name="oneWayBinding">
+    {{oneWayBinding}}
 
-<button (click)="add()">ADD</button>
+    <button type="submit">ADD</button>
+
+</form>
+
+<li *ngFor="let user of users">
+    {{user }}
+  </li>
+
