@@ -19,4 +19,9 @@ export class NgModelComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  add() {
+    console.log(this.twoWayBinding);
+  }
+
 }
